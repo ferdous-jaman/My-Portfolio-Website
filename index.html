@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Ferdous Jaman | Software Engineer, Web Developer & AI Researcher</title>
+  <meta name="description" content="Portfolio of Md. Ferdous Jaman — CSE Graduate (CGPA 3.80/4.00), Web Developer at ElyXen, and Published Researcher with 6 peer-reviewed papers in Elsevier Q1 & IEEE conferences.">
+  <meta name="keywords" content="Md. Ferdous Jaman, Ferdous Jaman, Web Developer, Software Engineer, Deep Learning, Explainable AI, Elsevier, IEEE Xplore, React Native, PHP, Laravel">
+  <meta name="author" content="Md. Ferdous Jaman">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Md. Ferdous Jaman | Portfolio">
+  <meta property="og:description" content="CSE Graduate, Web Developer at ElyXen, and Published Researcher with 6 peer-reviewed papers in Elsevier Q1 & IEEE.">
+  <meta property="og:image" content="assets/ferdous-jaman.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-nav">
+    <div class="nav-container">
+      <a href="#hero" class="site-logo">
+        <span class="logo-badge">FJ</span>
+        <span>Md. Ferdous Jaman</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#research" class="nav-link">Research & Publications</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#references" class="nav-link">References</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+          <span id="themeIcon">☀️</span>
+        </button>
+
+        <a href="assets/Md_Ferdous_Jaman_Resume.pdf" download="Md_Ferdous_Jaman_Resume.pdf" class="btn btn-primary btn-sm" id="navResumeBtn">
+          <span>Download CV</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Open navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-status">
+            <span class="pulse-dot"></span>
+            <span>Available for Full-Time Roles & AI Research Collaboration</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Md. Ferdous Jaman</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span>I am a</span>
+            <span class="typewriter-text" id="typewriter">Full-Stack Web Developer</span>
+          </div>
+
+          <p class="hero-bio">
+            Computer Science & Engineering graduate from Daffodil International University 
+            (<strong>CGPA 3.80/4.00</strong>, Dean's List Award). Professional Web Developer at 
+            <strong>ElyXen</strong> with 10+ custom web systems delivered, and published researcher 
+            with <strong>6 peer-reviewed papers</strong> in Elsevier (Scopus Q1) & IEEE Xplore.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#research" class="btn btn-primary">
+              <span>View Research (6 Papers)</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              <span>Explore Projects</span>
+            </a>
+            <a href="assets/Md_Ferdous_Jaman_Resume.pdf" target="_blank" class="btn btn-outline">
+              <span>Open CV PDF</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/ferdous-jaman" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>github.com/ferdous-jaman</span>
+            </a>
+            <a href="https://linkedin.com/in/ferdousjaman" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>linkedin.com/in/ferdousjaman</span>
+            </a>
+            <button class="social-link copy-trigger" data-copy="ferdousjamanmim@gmail.com" title="Click to copy email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Showcase -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-img-container">
+              <img src="assets/ferdous-jaman.jpg" alt="Md. Ferdous Jaman" class="avatar-img" width="330" height="390" priority>
+            </div>
+            
+            <!-- Floating interactive micro-cards -->
+            <div class="float-card float-card-1">
+              <div class="float-icon icon-gold">📄</div>
+              <div class="float-info">
+                <h5>6 Published Papers</h5>
+                <p>Elsevier Q1 + 5 IEEE Xplore</p>
+              </div>
+            </div>
+
+            <div class="float-card float-card-2">
+              <div class="float-icon icon-cyan">🌐</div>
+              <div class="float-info">
+                <h5>10+ Custom Sites</h5>
+                <p>Full-Stack Web Dev at ElyXen</p>
+              </div>
+            </div>
+
+            <div class="float-card float-card-3">
+              <div class="float-icon icon-purple">🎓</div>
+              <div class="float-info">
+                <h5>CGPA 3.80 / 4.00</h5>
+                <p>Dean's List (Top 0.5%)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT STATS BANNER -->
+    <section class="stats-banner" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number gradient-text" data-target="6">6</div>
+            <div class="stat-label">Peer-Reviewed Publications</div>
+            <div class="stat-subtext">1 Elsevier Q1 + 5 IEEE Papers</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number gradient-text" data-target="10.5">10.5</div>
+            <div class="stat-label">Journal CiteScore</div>
+            <div class="stat-subtext">Elsevier Scopus Q1 Journal</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number gradient-text" data-target="10">10+</div>
+            <div class="stat-label">Production Web Systems</div>
+            <div class="stat-subtext">Developed & Maintained at ElyXen</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number gradient-text" data-target="3.80">3.80</div>
+            <div class="stat-label">B.Sc. CSE CGPA</div>
+            <div class="stat-subtext">Top 0.5% Dean's List Award</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title">Bridging Software Engineering & <span class="gradient-text">Artificial Intelligence</span></h2>
+          <p class="section-desc">Passionate engineer combining rigorous software design with cutting-edge medical machine learning research.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <div>
+              <p class="about-lead">
+                I am a Computer Science & Engineering graduate based in Mirpur, Dhaka, Bangladesh, with a proven track record across professional web engineering and peer-reviewed academic AI research.
+              </p>
+              <p class="about-p">
+                At <strong>ElyXen</strong>, I build and maintain responsive, high-traffic, SEO-optimized web systems utilizing PHP, Laravel, WordPress, and modern JavaScript architectures. I care deeply about performance, clean code, database normalization (3NF), and robust software testing lifecycles (STLC).
+              </p>
+              <p class="about-p">
+                Beyond full-stack development, my research focuses on <strong>Explainable Deep Learning</strong>, <strong>Medical Image Analysis</strong>, and handling extreme class imbalance in clinical datasets. My work has appeared in <em>Informatics in Medicine Unlocked</em> (Elsevier Scopus Q1, CiteScore: 10.5) and five prestigious IEEE international conferences.
+              </p>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+            </div>
+          </div>
+
+          <div class="about-highlights-grid">
+            <div class="highlight-box">
+              <div class="highlight-icon">💻</div>
+              <h3 class="highlight-title">Full-Stack Development</h3>
+              <p class="highlight-desc">10+ production websites engineered with PHP, Laravel, React, Supabase, and MySQL. Scalable, secure, and cross-browser optimized.</p>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon">🔬</div>
+              <h3 class="highlight-title">Explainable AI & Health</h3>
+              <p class="highlight-desc">Deep neural networks with Grad-CAM & LIME interpretability for Lung Cancer, Breast Cancer, Cardiac ECG, Stroke, and Leukemia detection.</p>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon">🗄️</div>
+              <h3 class="highlight-title">Database Architecture</h3>
+              <p class="highlight-desc">Expertise in 3NF normalization, relational constraints, stored procedures, indexing, and high-performance querying in MySQL and MS SQL.</p>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon">🏆</div>
+              <h3 class="highlight-title">Academic Excellence</h3>
+              <p class="highlight-desc">Dean's List Award (Top 0.5%), DIU Growing Star (Top 5%), multiple competitive programming accolades, and 4x Board Scholarships.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH & PUBLICATIONS SECTION -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Scientific Publications</div>
+          <h2 class="section-title">Peer-Reviewed <span class="gradient-text">Research</span></h2>
+          <p class="section-desc">6 publications across Elsevier Scopus Q1 journals and IEEE Xplore conferences focusing on Medical AI, Class Imbalance, and Explainability.</p>
+        </div>
+
+        <!-- Featured Spotlight Publication Banner -->
+        <div class="research-feature-banner">
+          <div class="research-banner-inner">
+            <div class="research-banner-content">
+              <div class="research-badge-spotlight">
+                ⭐ Elsevier Journal Publication • Scopus Q1 • CiteScore: 10.5
+              </div>
+              <h3 class="research-banner-title">
+                Deep Learning-Based Binary Detection and Multiclass Subtyping of Non-Small Cell Lung Cancer with Model Interpretability
+              </h3>
+              <p class="research-banner-desc">
+                Published in <em>Informatics in Medicine Unlocked</em>, Elsevier. Introduces an interpretable deep learning framework incorporating Grad-CAM visualization for granular histopathological subtyping and binary diagnosis of non-small cell lung carcinoma.
+              </p>
+              <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                <a href="https://doi.org/10.1016/j.imu.2026.101789" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>View on Elsevier / DOI</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <button class="btn btn-outline btn-sm open-bib-btn" data-pub-id="elsevier-lung">
+                  <span>Cite / BibTeX</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="research-banner-media">
+              <img src="assets/research-ai.jpg" alt="Medical Deep Learning Visualization with Grad-CAM" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" id="pubFilters">
+          <button class="filter-tab active" data-filter="all">All Publications (6)</button>
+          <button class="filter-tab" data-filter="elsevier">Elsevier Q1 Journal (1)</button>
+          <button class="filter-tab" data-filter="ieee">IEEE Xplore Conferences (5)</button>
+          <button class="filter-tab" data-filter="oncology">Cancer & Oncology AI</button>
+          <button class="filter-tab" data-filter="xai">Explainable AI (Grad-CAM/LIME)</button>
+        </div>
+
+        <!-- Publications List Grid -->
+        <div class="publications-grid">
+          
+          <!-- Publication 1 (Elsevier Q1) -->
+          <article class="pub-card" data-category="elsevier oncology xai">
+            <div class="pub-top">
+              <div class="pub-badges">
+                <span class="pub-badge pub-badge-q1">Elsevier Scopus Q1</span>
+                <span class="pub-badge pub-badge-conf">CiteScore 10.5</span>
+                <span class="pub-badge pub-badge-ieee">Journal Paper</span>
+              </div>
+              <span class="pub-year">Published 2026</span>
+            </div>
+
+            <h3 class="pub-title">
+              Deep Learning-Based Binary Detection and Multiclass Subtyping of Non-Small Cell Lung Cancer with Model Interpretability
+            </h3>
+
+            <div class="pub-meta">
+              <div class="pub-venue">Informatics in Medicine Unlocked, Elsevier</div>
+              <div class="pub-authors">Md. Ferdous Jaman et al.</div>
+              <a href="https://doi.org/10.1016/j.imu.2026.101789" target="_blank" rel="noopener noreferrer" class="pub-doi-badge">
+                <span>DOI: 10.1016/j.imu.2026.101789</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/></svg>
+              </a>
+            </div>
+
+            <div class="pub-tags">
+              <span class="tag-pill">Non-Small Cell Lung Cancer</span>
+              <span class="tag-pill">Multiclass Subtyping</span>
+              <span class="tag-pill">Grad-CAM Interpretability</span>
+              <span class="tag-pill">Deep CNN</span>
+            </div>
+
+            <div class="pub-actions">
+              <a href="https://doi.org/10.1016/j.imu.2026.101789" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Read Article</a>
+              <button class="btn btn-outline btn-sm open-bib-btn" data-pub-id="elsevier-lung">Copy BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Publication 2 (IEEE QPAIN 2026) -->
+          <article class="pub-card" data-category="ieee oncology xai">
+            <div class="pub-top">
+              <div class="pub-badges">
+                <span class="pub-badge pub-badge-ieee">IEEE Xplore</span>
+                <span class="pub-badge pub-badge-conf">IEEE QPAIN 2026</span>
+              </div>
+              <span class="pub-year">2026</span>
+            </div>
+
+            <h3 class="pub-title">
+              DeepLungBalance: Addressing Class Imbalance in Deep Learning-Based Lung Cancer Detection with Explainable AI and Prototype Deployment
+            </h3>
+
+            <div class="pub-meta">
+              <div class="pub-venue">IEEE Conference on Quantum, Predictive AI, and Intelligent Networks (QPAIN 2026)</div>
+              <div class="pub-authors">Md. Ferdous Jaman et al.</div>
+              <a href="https://doi.org/10.1109/QPAIN69676.2026.11546617" target="_blank" rel="noopener noreferrer" class="pub-doi-badge">
+                <span>DOI: 10.1109/QPAIN69676.2026.11546617</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/></svg>
+              </a>
+            </div>
+
+            <div class="pub-tags">
+              <span class="tag-pill">Class Imbalance Handling</span>
+              <span class="tag-pill">Explainable AI (XAI)</span>
+              <span class="tag-pill">Prototype Deployment</span>
+              <span class="tag-pill">Lung Cancer</span>
+            </div>
+
+            <div class="pub-actions">
+              <a href="https://doi.org/10.1109/QPAIN69676.2026.11546617" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Read on IEEE Xplore</a>
+              <button class="btn btn-outline btn-sm open-bib-btn" data-pub-id="ieee-qpain">Copy BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Publication 3 (IEEE ICECTE 2026) -->
+          <article class="pub-card" data-category="ieee oncology">
+            <div class="pub-top">
+              <div class="pub-badges">
+                <span class="pub-badge pub-badge-ieee">IEEE Xplore</span>
+                <span class="pub-badge pub-badge-conf">IEEE ICECTE 2026</span>
+              </div>
+              <span class="pub-year">2026</span>
+            </div>
+
+            <h3 class="pub-title">
+              Deep Learning-Based Breast Cancer Classification: A Comprehensive Study on Mammogram Images
+            </h3>
+
+            <div class="pub-meta">
+              <div class="pub-venue">IEEE International Conference on Electrical, Computer and Telecommunication Engineering (ICECTE 2026)</div>
+              <div class="pub-authors">Md. Ferdous Jaman et al.</div>
+              <a href="https://doi.org/10.1109/ICECTE69292.2026.11429259" target="_blank" rel="noopener noreferrer" class="pub-doi-badge">
+                <span>DOI: 10.1109/ICECTE69292.2026.11429259</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/></svg>
+              </a>
+            </div>
+
+            <div class="pub-tags">
+              <span class="tag-pill">Mammogram Imaging</span>
+              <span class="tag-pill">Breast Cancer Classification</span>
+              <span class="tag-pill">Feature Extraction</span>
+              <span class="tag-pill">Deep Learning</span>
+            </div>
+
+            <div class="pub-actions">
+              <a href="https://doi.org/10.1109/ICECTE69292.2026.11429259" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Read on IEEE Xplore</a>
+              <button class="btn btn-outline btn-sm open-bib-btn" data-pub-id="ieee-icecte">Copy BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Publication 4 (IEEE BECITHCON 2025 - Cardio) -->
+          <article class="pub-card" data-category="ieee">
+            <div class="pub-top">
+              <div class="pub-badges">
+                <span class="pub-badge pub-badge-ieee">IEEE Xplore</span>
+                <span class="pub-badge pub-badge-conf">IEEE BECITHCON 2025</span>
+              </div>
+              <span class="pub-year">2025</span>
+            </div>
+
+            <h3 class="pub-title">
+              A Robust Deep Learning Approach for Cardiovascular Disease Diagnosis Using ECG Image Analysis
+            </h3>
+
+            <div class="pub-meta">
+              <div class="pub-venue">IEEE International Conference on Biomedical Engineering, Computer and Information Technology for Health (BECITHCON 2025)</div>
+              <div class="pub-authors">Md. Ferdous Jaman et al.</div>
+              <a href="https://doi.org/10.1109/BECITHCON69222.2025.11504222" target="_blank" rel="noopener noreferrer" class="pub-doi-badge">
+                <span>DOI: 10.1109/BECITHCON69222.2025.11504222</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/></svg>
+              </a>
+            </div>
+
+            <div class="pub-tags">
+              <span class="tag-pill">Cardiovascular Disease</span>
+              <span class="tag-pill">ECG Waveform Imaging</span>
+              <span class="tag-pill">Diagnostic Automation</span>
+              <span class="tag-pill">Biomedical AI</span>
+            </div>
+
+            <div class="pub-actions">
+              <a href="https://doi.org/10.1109/BECITHCON69222.2025.11504222" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Read on IEEE Xplore</a>
+              <button class="btn btn-outline btn-sm open-bib-btn" data-pub-id="ieee-becithcon-cardio">Copy BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Publication 5 (IEEE BECITHCON 2025 - Leukemia) -->
+          <article class="pub-card" data-category="ieee oncology">
+            <div class="pub-top">
+              <div class="pub-badges">
+                <span class="pub-badge pub-badge-ieee">IEEE Xplore</span>
+                <span class="pub-badge pub-badge-conf">IEEE BECITHCON 2025</span>
+              </div>
+              <span class="pub-year">2025</span>
+            </div>
+
+            <h3 class="pub-title">
+              Hybrid Deep Learning with Uncertainty Quantification for Detection of Acute Lymphoblastic Leukemia
+            </h3>
+
+            <div class="pub-meta">
+              <div class="pub-venue">IEEE International Conference on Biomedical Engineering, Computer and Information Technology for Health (BECITHCON 2025)</div>
+              <div class="pub-authors">Md. Ferdous Jaman et al.</div>
+              <a href="https://doi.org/10.1109/BECITHCON69222.2025.11504220" target="_blank" rel="noopener noreferrer" class="pub-doi-badge">
+                <span>DOI: 10.1109/BECITHCON69222.2025.11504220</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/></svg>
+              </a>
+            </div>
+
+            <div class="pub-tags">
+              <span class="tag-pill">Acute Lymphoblastic Leukemia</span>
+              <span class="tag-pill">Uncertainty Quantification</span>
+              <span class="tag-pill">Hybrid Deep Learning</span>
+              <span class="tag-pill">Blood Smear Imaging</span>
+            </div>
+
+            <div class="pub-actions">
+              <a href="https://doi.org/10.1109/BECITHCON69222.2025.11504220" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Read on IEEE Xplore</a>
+              <button class="btn btn-outline btn-sm open-bib-btn" data-pub-id="ieee-becithcon-leukemia">Copy BibTeX</button>
+            </div>
+          </article>
+
+          <!-- Publication 6 (PECCII 2026 - Brain Stroke) -->
+          <article class="pub-card" data-category="ieee xai">
+            <div class="pub-top">
+              <div class="pub-badges">
+                <span class="pub-badge pub-badge-ieee">IEEE Xplore</span>
+                <span class="pub-badge pub-badge-conf">PECCII 2026</span>
+              </div>
+              <span class="pub-year">2026</span>
+            </div>
+
+            <h3 class="pub-title">
+              DeepStrokeGuard: Explainable and Deployable Deep Learning for Brain Stroke Detection with Class Imbalance Handling
+            </h3>
+
+            <div class="pub-meta">
+              <div class="pub-venue">IEEE PECCII 2026</div>
+              <div class="pub-authors">Md. Ferdous Jaman et al.</div>
+              <a href="https://doi.org/10.1109/PECCII70991.2026.11661895" target="_blank" rel="noopener noreferrer" class="pub-doi-badge">
+                <span>DOI: 10.1109/PECCII70991.2026.11661895</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/></svg>
+              </a>
+            </div>
+
+            <div class="pub-tags">
+              <span class="tag-pill">Brain Stroke Detection</span>
+              <span class="tag-pill">Explainable AI</span>
+              <span class="tag-pill">Class Imbalance</span>
+              <span class="tag-pill">Clinical Deployment</span>
+            </div>
+
+            <div class="pub-actions">
+              <a href="https://doi.org/10.1109/PECCII70991.2026.11661895" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Read on IEEE Xplore</a>
+              <button class="btn btn-outline btn-sm open-bib-btn" data-pub-id="ieee-peccii-stroke">Copy BibTeX</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Featured Engineering Works</div>
+          <h2 class="section-title">Production & Academic <span class="gradient-text">Projects</span></h2>
+          <p class="section-desc">Practical software implementations spanning marketplace platforms, healthcare applications, and relational database management.</p>
+        </div>
+
+        <!-- Project Filter Tabs -->
+        <div class="filter-tabs" id="projectFilters">
+          <button class="filter-tab active" data-filter="all">All Projects</button>
+          <button class="filter-tab" data-filter="web">Full-Stack Web</button>
+          <button class="filter-tab" data-filter="mobile">Mobile & Cloud</button>
+          <button class="filter-tab" data-filter="database">Database & Systems</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Feriwala -->
+          <article class="project-card" data-category="web database">
+            <div class="project-image-box">
+              <img src="assets/feriwala.jpg" alt="Feriwala Service Marketplace Platform" loading="lazy">
+              <span class="project-category-badge">Web Marketplace</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Feriwala</h3>
+                <div class="project-subtitle">On-Demand Service Marketplace Platform</div>
+              </div>
+
+              <p class="project-desc">
+                A full-featured web-based service marketplace platform connecting customers with verified local service providers (technicians, plumbers, electricians).
+              </p>
+
+              <ul class="project-highlights-list">
+                <li><span class="bullet">▹</span> Designed core relational database structures for users, service catalogs, and transactions.</li>
+                <li><span class="bullet">▹</span> Integrated appointment scheduling and transaction verification flow.</li>
+                <li><span class="bullet">▹</span> Conducted usability testing with <strong>50+ active users</strong> to optimize workflow and reduce friction.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="tag-pill">HTML5</span>
+                <span class="tag-pill">CSS3</span>
+                <span class="tag-pill">JavaScript</span>
+                <span class="tag-pill">MySQL</span>
+                <span class="tag-pill">Usability Testing</span>
+              </div>
+
+              <div class="project-footer">
+                <span style="font-size: 0.82rem; color: var(--text-dim); font-family: var(--font-mono);">Live Architecture</span>
+                <a href="#contact" class="btn btn-outline btn-sm">Inquire Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Lifeline -->
+          <article class="project-card" data-category="mobile">
+            <div class="project-image-box">
+              <img src="assets/lifeline.jpg" alt="Lifeline Medical Ecosystem Application" loading="lazy">
+              <span class="project-category-badge">Mobile Ecosystem</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Lifeline</h3>
+                <div class="project-subtitle">Comprehensive Medical Ecosystem Application</div>
+              </div>
+
+              <p class="project-desc">
+                An integrated mobile health application engineered in React Native for Android, supporting urgent medical coordination and everyday patient health management.
+              </p>
+
+              <ul class="project-highlights-list">
+                <li><span class="bullet">▹</span> Emergency medical dispatch and one-tap assistance coordination.</li>
+                <li><span class="bullet">▹</span> Doctor directories, appointment booking, and consultation logs.</li>
+                <li><span class="bullet">▹</span> Supabase real-time backend integration with secure authentication & gamified wellness points.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="tag-pill">React Native</span>
+                <span class="tag-pill">Supabase</span>
+                <span class="tag-pill">Android Studio</span>
+                <span class="tag-pill">REST APIs</span>
+                <span class="tag-pill">Real-time DB</span>
+              </div>
+
+              <div class="project-footer">
+                <span style="font-size: 0.82rem; color: var(--text-dim); font-family: var(--font-mono);">Mobile App</span>
+                <a href="#contact" class="btn btn-outline btn-sm">Inquire Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: BuildNest -->
+          <article class="project-card" data-category="database">
+            <div class="project-image-box">
+              <img src="assets/buildnest.jpg" alt="BuildNest Construction Expenditure Management" loading="lazy">
+              <span class="project-category-badge">Enterprise Database</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3>BuildNest</h3>
+                <div class="project-subtitle">Construction Expenditure Management System</div>
+              </div>
+
+              <p class="project-desc">
+                A robust, database-driven cost auditing and construction expenditure management system built to handle intricate project budgets and vendor accounts.
+              </p>
+
+              <ul class="project-highlights-list">
+                <li><span class="bullet">▹</span> Enforced strict <strong>Third Normal Form (3NF)</strong> normalization across all entities.</li>
+                <li><span class="bullet">▹</span> Relational integrity constraints minimizing redundancy and anomalies.</li>
+                <li><span class="bullet">▹</span> Detailed expenditure breakdown, contractor milestone payments, and audit logs.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="tag-pill">MS SQL Server</span>
+                <span class="tag-pill">Relational DBMS</span>
+                <span class="tag-pill">3NF Normalization</span>
+                <span class="tag-pill">SQL Views & Triggers</span>
+              </div>
+
+              <div class="project-footer">
+                <span style="font-size: 0.82rem; color: var(--text-dim); font-family: var(--font-mono);">Enterprise DBMS</span>
+                <a href="#contact" class="btn btn-outline btn-sm">Inquire Details</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Technical Competencies</div>
+          <h2 class="section-title">Skills & <span class="gradient-text">Proficiencies</span></h2>
+          <p class="section-desc">Comprehensive toolset spanning modern programming, web systems, database design, software QA, and deep learning.</p>
+        </div>
+
+        <div class="skills-container">
+
+          <!-- 1. Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">⚙️</div>
+              <h3 class="skill-cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-badge highlight">Python</span>
+              <span class="skill-badge highlight">JavaScript</span>
+              <span class="skill-badge highlight">PHP</span>
+              <span class="skill-badge">C</span>
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">Object-Oriented Programming (OOP)</span>
+            </div>
+          </div>
+
+          <!-- 2. Web & Mobile Development -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🌐</div>
+              <h3 class="skill-cat-title">Web & Mobile Dev</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-badge highlight">Laravel</span>
+              <span class="skill-badge highlight">PHP</span>
+              <span class="skill-badge highlight">React</span>
+              <span class="skill-badge highlight">React Native</span>
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+              <span class="skill-badge">WordPress</span>
+              <span class="skill-badge">Responsive UI</span>
+              <span class="skill-badge">SEO Optimization</span>
+            </div>
+          </div>
+
+          <!-- 3. Databases & Backend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">💾</div>
+              <h3 class="skill-cat-title">Databases & Backend</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-badge highlight">MySQL</span>
+              <span class="skill-badge highlight">Supabase</span>
+              <span class="skill-badge">MS SQL</span>
+              <span class="skill-badge">SQLite</span>
+              <span class="skill-badge">3NF Normalization</span>
+              <span class="skill-badge">DBMS Architecture</span>
+              <span class="skill-badge">RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- 4. ML & Data Science -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🧠</div>
+              <h3 class="skill-cat-title">Machine Learning & AI</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-badge highlight">Deep Learning</span>
+              <span class="skill-badge highlight">Medical Image Analysis</span>
+              <span class="skill-badge highlight">Explainable AI (Grad-CAM)</span>
+              <span class="skill-badge highlight">LIME</span>
+              <span class="skill-badge">Class Imbalance Handling</span>
+              <span class="skill-badge">Data Science</span>
+              <span class="skill-badge">Neural Networks</span>
+            </div>
+          </div>
+
+          <!-- 5. Core CSE & Software QA -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🛡️</div>
+              <h3 class="skill-cat-title">Core CSE & SQA</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-badge highlight">Data Structures & Algorithms</span>
+              <span class="skill-badge highlight">SDLC & STLC</span>
+              <span class="skill-badge">Manual Testing</span>
+              <span class="skill-badge">Test Case Design</span>
+              <span class="skill-badge">Functional Testing</span>
+              <span class="skill-badge">Bug Reporting</span>
+              <span class="skill-badge">Computer Networks</span>
+              <span class="skill-badge">Operating Systems</span>
+              <span class="skill-badge">UML & Architecture</span>
+            </div>
+          </div>
+
+          <!-- 6. Developer Tools & Soft Skills -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🛠️</div>
+              <h3 class="skill-cat-title">Tools & Soft Skills</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-badge highlight">Git & GitHub</span>
+              <span class="skill-badge highlight">Figma</span>
+              <span class="skill-badge">Android Studio</span>
+              <span class="skill-badge">LaTeX</span>
+              <span class="skill-badge">Problem-Solving</span>
+              <span class="skill-badge">Technical Leadership</span>
+              <span class="skill-badge">Communication</span>
+              <span class="skill-badge">Teamwork</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Career & Academics</div>
+          <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+          <p class="section-desc">My professional journey in industry web development alongside academic achievements.</p>
+        </div>
+
+        <div class="timeline-grid">
+
+          <!-- Left Column: Professional Experience -->
+          <div>
+            <div class="timeline-column-header">
+              <div class="timeline-column-icon">💼</div>
+              <h3>Professional Experience</h3>
+            </div>
+
+            <div class="timeline-list">
+              <div class="timeline-card">
+                <span class="timeline-period">May 2026 – Present</span>
+                <h4 class="timeline-role">Web Developer</h4>
+                <div class="timeline-institution">ElyXen — Birulia, Savar, Dhaka, Bangladesh</div>
+
+                <ul class="timeline-bullets">
+                  <li>Developed and maintained <strong>10+ custom websites</strong> using PHP, Laravel, WordPress, and modern web development practices.</li>
+                  <li>Built responsive, cross-device compatible, and SEO-friendly web solutions with continuous focus on usability, responsiveness, and performance.</li>
+                  <li>Worked on complete feature implementation, UI integration, deployment workflows, customization, and technical maintenance.</li>
+                  <li>Collaborated closely with clients and cross-functional team members to gather requirements and deliver high-impact web-based solutions.</li>
+                </ul>
+
+                <span class="achievement-pill">⚡ 10+ Production Deployments</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Education & Academic Honors -->
+          <div id="education">
+            <div class="timeline-column-header">
+              <div class="timeline-column-icon">🎓</div>
+              <h3>Academic Education</h3>
+            </div>
+
+            <div class="timeline-list">
+              <!-- DIU -->
+              <div class="timeline-card">
+                <span class="timeline-period">Graduating 2026</span>
+                <h4 class="timeline-role">B.Sc. in Computer Science and Engineering</h4>
+                <div class="timeline-institution">Daffodil International University (DIU) — Dhaka, Bangladesh</div>
+                
+                <ul class="timeline-bullets">
+                  <li><strong>CGPA: 3.80 / 4.00</strong> (Completed 148 Credits)</li>
+                  <li><strong>Dean’s List Award</strong> — Top 0.5% among all DIU departments (Fall 2023)</li>
+                  <li><strong>DIU Growing Star</strong> — Top 5% among all students (Spring 2022)</li>
+                  <li><strong>DIU Take-off Programming Contest</strong> — Top 5% rank (Fall 2022)</li>
+                  <li><strong>DIU Unlock the Algorithm Contest</strong> — Top 10% rank (Fall 2023)</li>
+                </ul>
+
+                <span class="achievement-pill">🏆 Dean's List Top 0.5%</span>
+              </div>
+
+              <!-- HSC -->
+              <div class="timeline-card">
+                <span class="timeline-period">2020</span>
+                <h4 class="timeline-role">Higher Secondary Certificate (HSC), Science</h4>
+                <div class="timeline-institution">Govt. Azizul Haque College — Bogura, Bangladesh</div>
+                
+                <ul class="timeline-bullets">
+                  <li>Result: <strong>Golden A+ (GPA 5.00)</strong></li>
+                  <li>Awarded Govt. Education Board Scholarship</li>
+                </ul>
+
+                <span class="achievement-pill">🌟 Golden A+ (Board Scholarship)</span>
+              </div>
+
+              <!-- SSC -->
+              <div class="timeline-card">
+                <span class="timeline-period">2018</span>
+                <h4 class="timeline-role">Secondary School Certificate (SSC), Science</h4>
+                <div class="timeline-institution">Bogra Zilla School — Bogura, Bangladesh</div>
+                
+                <ul class="timeline-bullets">
+                  <li>Result: <strong>Golden A+ (GPA 5.00)</strong></li>
+                  <li>Awarded Govt. Education Board Scholarship</li>
+                  <li>Recipient of consecutive Board Scholarships across PSC, JSC, SSC, and HSC.</li>
+                </ul>
+
+                <span class="achievement-pill">🌟 4x Board Scholarship Recipient</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENCES SECTION -->
+    <section class="section" id="references">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Endorsements</div>
+          <h2 class="section-title">Academic <span class="gradient-text">References</span></h2>
+          <p class="section-desc">Distinguished faculty mentors recommending my research contributions and engineering capabilities.</p>
+        </div>
+
+        <div class="references-grid">
+
+          <!-- Reference 1 -->
+          <div class="ref-card">
+            <div>
+              <div class="ref-top">
+                <div class="ref-avatar">SM</div>
+                <div>
+                  <h4 class="ref-name">Ms. Sadia Jannat Mitu</h4>
+                  <div class="ref-role">Lecturer, Department of CSE</div>
+                  <div class="ref-inst">Kishoreganj University, Kishoreganj, Dhaka, Bangladesh</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ref-contacts">
+              <div class="ref-item">
+                <span>📧</span>
+                <a href="mailto:sadiajannat335@gmail.com">sadiajannat335@gmail.com</a>
+              </div>
+              <div class="ref-item">
+                <span>📞</span>
+                <a href="tel:+8801795582152">+880 1795582152</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reference 2 -->
+          <div class="ref-card">
+            <div>
+              <div class="ref-top">
+                <div class="ref-avatar">MR</div>
+                <div>
+                  <h4 class="ref-name">Mr. Md. Mizanur Rahman</h4>
+                  <div class="ref-role">Senior Lecturer, Department of CSE</div>
+                  <div class="ref-inst">Daffodil International University (DIU), DSC, Birulia, Savar, Dhaka</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ref-contacts">
+              <div class="ref-item">
+                <span>📧</span>
+                <a href="mailto:mizanurrahman.cse@diu.edu.bd">mizanurrahman.cse@diu.edu.bd</a>
+              </div>
+              <div class="ref-item">
+                <span>📞</span>
+                <a href="tel:+8801751726350">+880 1751726350, 0195497608</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Get in Touch</div>
+          <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-desc">Open for software engineering roles, research fellowships, freelance web projects, and academic inquiries.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Direct Details -->
+          <div class="contact-info-card">
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Contact Information</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Feel free to reach out directly via email, phone, or connected social profiles. I typically reply within 24 hours.
+            </p>
+
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-detail">
+                <h5>Email Address</h5>
+                <a href="mailto:ferdousjamanmim@gmail.com">ferdousjamanmim@gmail.com</a>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="ferdousjamanmim@gmail.com" title="Copy email">Copy</button>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div class="contact-detail">
+                <h5>Phone / WhatsApp</h5>
+                <a href="tel:+8801612018416">+880 1612018416</a>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="+8801612018416" title="Copy phone">Copy</button>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-detail">
+                <h5>Location</h5>
+                <p>Mirpur, Dhaka, Bangladesh</p>
+              </div>
+            </div>
+
+            <!-- Resume Download Box -->
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 0.8rem;">
+              <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-muted);">Curriculum Vitae</span>
+              <a href="assets/Md_Ferdous_Jaman_Resume.pdf" download="Md_Ferdous_Jaman_Resume.pdf" class="btn btn-primary">
+                <span>Download Resume (PDF)</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Interactive Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.3rem; margin-bottom: 1.2rem;">Send a Direct Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="nameInput" class="form-label">Your Name</label>
+                <input type="text" id="nameInput" class="form-input" placeholder="e.g. Dr. Alex Mercer / Sarah Jenkins" required>
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput" class="form-label">Your Email</label>
+                <input type="email" id="emailInput" class="form-input" placeholder="e.g. alex.mercer@organization.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subjectInput" class="form-label">Subject</label>
+                <input type="text" id="subjectInput" class="form-input" placeholder="e.g. Job Opportunity / Research Collaboration / Project Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput" class="form-label">Message</label>
+                <textarea id="messageInput" class="form-textarea" placeholder="Tell me about your project, team, or research discussion..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        © 2026 <strong>Md. Ferdous Jaman</strong>. Engineered with modern vanilla web standards.
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="https://github.com/ferdous-jaman" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/ferdousjaman" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+        <li><a href="mailto:ferdousjamanmim@gmail.com" class="footer-link">Email</a></li>
+        <li><a href="assets/Md_Ferdous_Jaman_Resume.pdf" class="footer-link">Resume PDF</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- BibTeX Citation Modal -->
+  <div class="modal-overlay" id="bibModal" role="dialog" aria-modal="true" aria-labelledby="bibModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="bibModalTitle">BibTeX Citation</h3>
+        <button class="modal-close" id="closeBibModal" aria-label="Close Modal">✕</button>
+      </div>
+      <div class="code-box" id="bibContent"></div>
+      <div style="display: flex; justify-content: flex-end; gap: 0.8rem;">
+        <button class="btn btn-primary btn-sm" id="copyBibBtn">Copy Citation to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">↑</button>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
